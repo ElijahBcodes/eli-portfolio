@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+# Styles were created using Tailwind CSS 
+-https://tailwindcss.com/docs/guides/create-react-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
