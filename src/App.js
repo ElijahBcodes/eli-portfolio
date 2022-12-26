@@ -1,16 +1,17 @@
-
+import React from "react"
+import Home from "./pages/Home/Home"
+import { Routes, Route } from "react-router-dom"
 
 const App = () => {
     return (
       <>
 
-      <h1>Welcome</h1>
-      <div className="wrapper">
-    <div className="typing-demo">
-      This is a typing portfolio.
-    </div>
-</div>
-        </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
+    </Routes>
+
+  </>
     )
 }
 
