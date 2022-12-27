@@ -20,7 +20,7 @@ const Navigation = () => {
                         setExpandNavbar((prev) => !prev);
                     }}
                 >
-                    <FcMenu />
+                    {/* <FcMenu /> */}
                 </button>
             </div>
             <div className=''>
