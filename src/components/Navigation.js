@@ -1,47 +1,36 @@
-import React from 'react'
-import {Nav, NavItem, Navbar} from 'reactstrap'
-import {NavLink} from 'react-router-dom'
-
+import { Link, useLocation ,} from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { FcMenu } from "react-icons/fc";
 
 const Navigation = () => {
-  return (
-<Navbar
-  fluid={true}
-  rounded={true}
->
-  <Navbar.Brand href="https://flowbite.com/">
-    <img
-      src="https://flowbite.com/docs/images/logo.svg"
-      className="mr-3 h-6 sm:h-9"
-      alt="Flowbite Logo"
-    />
-    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-      Flowbite
-    </span>
-  </Navbar.Brand>
-  <Navbar.Toggle />
-  <Navbar.Collapse>
-    <Navbar.Link
-      href="/navbars"
-      active={true}
-    >
-      Home
-    </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      About
-    </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      Services
-    </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      Pricing
-    </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      Contact
-    </Navbar.Link>
-  </Navbar.Collapse>
-</Navbar>
-  )
+    const [expandNavbar, setExpandNavbar] = useState(false);
+
+    const location = useLocation();
+    //if location changes will set navbar loc to false, will close navbar
+    useEffect(() => {
+        setExpandNavbar(false)
+    }, [location])
+
+
+    return (
+        <div className='m:h-9 shadow-md w-full top-0 left-0'  id={expandNavbar ? "open" : "close"}>
+            <div className='toggleButton'>
+                <button
+                    onClick={() => {
+                        setExpandNavbar((prev) => !prev);
+                    }}
+                >
+                    <FcMenu />
+                </button>
+            </div>
+            <div className=''>
+                <Link to="/"> Home </Link>
+                <br></br>
+                <Link to="/About"> About </Link>
+            </div>
+        </div>
+    )
 }
+
 
 export default Navigation
