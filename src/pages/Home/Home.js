@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom;
-
+import { NavLink } from 'react-router-dom';
+import Pic from "../../assets/portrait.png"
 
 function Home() {
   return (
@@ -13,13 +13,15 @@ function Home() {
     </section>
     </div>
     <div>
-      <h1> Main Section</h1>
+      <h1> Elijah Barreto</h1>
+      <h2>Full Stack Web Developer</h2>
+      <img className='portrait' alt='portrait' src={Pic} />
       <p>The main text lorem ipsum</p>
      </div>
      <NavLink to="/about">
             <div >
               <p >
-                Pick A Mood
+                Learn more about me.
               </p>
             </div>
           </NavLink>
