@@ -6,7 +6,7 @@ const About = () => {
     <>
       <div className="avatar">
         <div className="max-w-sm rounded-lg ">
-          <img src={pic1} />
+          <img src={pic1} alt="profile pic" />
         </div>
         <div>
           {""}Hello and welcome! My name is Elijah, and I am a full stack web
