@@ -4,7 +4,7 @@ import { ProjectList } from "../helpers/ProjectList";
 
 function Projects() {
   return (
-    <div className=" h-full w-13/5 flex items-center justify-center  flex-col " >
+    <div className=" m-8 h-full w-13/5 flex items-center justify-center  flex-col " >
       <h1> Recent Projects </h1>
       <div className= "text-base flex items-center flex-wrap" >
         {ProjectList.map((project, idx) => {
