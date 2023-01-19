@@ -1,17 +1,21 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { ProjectList } from "../helpers/ProjectList";
 
 function ProjectItem({ image, name, id }) {
   const navigate = useNavigate();
   return (
     <div
-      className="rounded w-3 h-3 m-10 shadow-inherit"
+      className="rounded-lg w-50 h-50  shadow-inherit text-sm"
       onClick={() => {
         navigate("/project/" + id);
       }}
     >
-      <div style={{ backgroundImage: `url(${image})` }} className="bg-none" />
+      <div  />
       <h1> {name} </h1>
+      <img className="h-20 w-20 rounded-full"
+                  src={image} alt="project-image"
+                />
     </div>
   );
 }

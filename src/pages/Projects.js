@@ -4,15 +4,16 @@ import { ProjectList } from "../helpers/ProjectList";
 
 function Projects() {
   return (
-    <div className=" h-full w-13/5 flex items-center justify-center  flex-col " >
+    <div className="h-full w-full justify-center   bg-stone-200" >
       <h1> Recent Projects </h1>
-      <div className= "text-base flex items-center flex-wrap" >
+      <div className= "text-base flex flex-wrap" >
         {ProjectList.map((project, idx) => {
           return (
-            <ProjectItem id={idx} name={project.name} img={project.image} />
+            <ProjectItem id={idx} name={project.name} image={project.image} />
           );
         })}
       </div>
+      
     </div>
   );
 }
