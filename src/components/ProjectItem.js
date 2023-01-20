@@ -12,6 +12,7 @@ function ProjectItem({ image, name, id }) {
       }}
     >
       <div  />
+      <div style={{ backgroundImage: `url(${image})` }} className="bg-fill" />
       <h1> {name} </h1>
       <img className="h-20 w-20 rounded-full"
                   src={image} alt="project-image"

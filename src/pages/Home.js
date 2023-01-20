@@ -10,15 +10,8 @@ function Home() {
         <div className="container mx-auto px-4">
           <img className="mask mask-circle" alt="portrait" src={Pic} />
         </div>
-        <p>The main text lorem ipsum</p>
-        <img
-          className="mask mask-circle"
-          src="https://placeimg.com/160/160/arch"
-          alt="portrait"
-        />
-        
+        <p> A React Developer with a passion for learning and technology.</p>
       </div>
- 
     </>
   );
 }

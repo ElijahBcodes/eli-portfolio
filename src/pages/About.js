@@ -1,6 +1,7 @@
 import React from "react";
 import pic1 from "../assets/portrait.png";
 
+
 const About = () => {
   return (
     <>
@@ -14,7 +15,7 @@ const About = () => {
             My name is Elijah, a full stack web developer specializing in React
             and Ruby on Rails. Thank you for visiting my portfolio!{" "}
           </p>
-        </div>
+        </div>     
       </div>
     </>
   );
