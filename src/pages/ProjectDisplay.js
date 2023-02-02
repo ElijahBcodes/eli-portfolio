@@ -8,7 +8,7 @@ function ProjectDisplay() {
   const { id } = useParams();
   const project = ProjectList[id];
   return (
-    <div className="flex">
+    <div className="flex font-serif">
       <h1> {project.name} </h1>
       <a href={project.link} target= "_blank" rel="noreferrer">
       <img src={project.image} alt="a view of the project" /></a>
