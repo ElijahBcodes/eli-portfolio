@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { ProjectList } from "../helpers/ProjectList";
+
 
 function ProjectItem({ image, name, id }) {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ function ProjectItem({ image, name, id }) {
       <div style={{ backgroundImage: `url(${image})` }} className="bg-fill" />
       <h1> {name} </h1>
       <img className="h-20 w-20 rounded-full"
-                  src={image} alt="project-image"
+                  src={image} alt="project display"
                 />
     </div>
   );
