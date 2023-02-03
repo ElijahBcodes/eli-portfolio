@@ -26,7 +26,7 @@ export const Contact = () => {
 
   return (
     <>
-      <h1 className="text-center text-blk text-5xl mb-10 mt-10">
+      <h1 className="text-center text-blk text-5xl mb-10 mt-4">
         Send me a message
       </h1>
       <div className="space-y-2 flex justify-center mb-2 text-md font-medium">
@@ -59,9 +59,16 @@ export const Contact = () => {
               name="message"
             />
           </div>
-          <button className="btn btn-outline btn-success">
-            <input className="w-96 text-white" type="submit" value="Send" />
-          </button>
+          <div>
+            <button
+              htmlFor="my-modal"
+              value="send"
+              className="btn btn-outline btn-success text-white mt-4 w-96"
+              type="submit"
+            >
+              Send
+            </button>
+          </div>
         </form>
       </div>
     </>
