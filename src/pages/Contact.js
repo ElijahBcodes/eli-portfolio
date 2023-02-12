@@ -63,7 +63,7 @@ export const Contact = () => {
             <button
               htmlFor="my-modal"
               value="send"
-              className="btn btn-outline btn-success text-white mt-4 w-96"
+              className="btn btn-outline btn-secondary text-white mt-4 w-96"
               type="submit"
             >
               Send
