@@ -19,69 +19,75 @@ const ParticleBackground = () => {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        fpsLimit: 120,
+        fpsLimit: 60,
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+          
+            // onhover: {
+            //   enable: true,
+            //   mode: "attract",
+            //   parallax: { enable: false, force: 60, smooth: 10 }
+            // },
         background: {
           color: "#e4eaef",
-          opacity: 0.3,
-        },
+          opacity: 0,
+        },   resize: true
+      },
+      modes: {
+        push: { quantity: 4 },
+        attract: { distance: 200, duration: 0.4, factor: 5 }
+      }
+    },
+        
         particles: {
-          number: {
-            value: 10,
-          },
-          color: {
-            value: [
-              "#F4F7BE",
-              "#E5F77D",
-              "#DEBA6F",
-              "#823038",
-              "#1E000E",
-              "#F45623",
-              "#D62E32",
-              "#EB586E",
-              "#9952CF",
-            ],
-          },
-          shape: {
-            type: "square",
-          },
-          opacity: {
-            value: 0.5,
-          },
+          color: { value: "#ffffff" },
+          line_linked: {
+            color: "#ffffff",
+            distance: 150,
+            enable: true,
+            opacity: 0.4,
+            width: 1
+          },      
           size: {
             value: { min: 5, max: 10 },
           },
           move: {
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+            bounce: false,
+            direction: "none",
             enable: true,
-            angle: {
-              value: 30,
-              offset: 0,
-            },
-            speed: {
-              min: 1,
-              max: 4,
-            },
-            direction: "top",
-            outModes: {
-              default: "destroy",
-              bottom: "none",
-            },
+            out_mode: "out",
+            random: false,
+            speed: 2,
+            straight: false
           },
+          number: { density: { enable: true, value_area: 800 }, value: 80 },
+          opacity: {
+            anim: { enable: false, opacity_min: 0.1, speed: 1, sync: false },
+            random: false,
+            value: 0.5
+          },
+          shape: {
+            character: {
+              fill: false,
+              font: "Verdana",
+              style: "",
+              value: "*",
+              weight: "200"
+            },
+            
+          },
+        },
+        polygon: {
+          draw: { enable: false, lineColor: "#ffffff", lineWidth: 0.5 },
+          move: { radius: 10 },
+          scale: 1,
+          type: "none",
+          url: ""
         },
         detectRetina: true,
-        emitters: {
-          position: {
-            x: 50,
-            y: 150,
-          },
-          rate: {
-            delay: 0.2,
-            quantity: 3,
-          },
-          size: {
-            width: 50,
-            height: 25,
-          },
-        },
+        
       }}
     />
   );
