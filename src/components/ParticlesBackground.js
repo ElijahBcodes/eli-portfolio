@@ -2,10 +2,8 @@ import React, { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
-
 const ParticleBackground = () => {
   const particlesInit = useCallback(async (engine) => {
-
     await loadFull(engine);
   }, []);
 
@@ -22,23 +20,23 @@ const ParticleBackground = () => {
         fpsLimit: 60,
         interactivity: {
           events: {
-          
             onhover: {
               enable: true,
               mode: "repulse",
-              parallax: { enable: false, force: 60, smooth: 10 }
+              parallax: { enable: false, force: 60, smooth: 10 },
             },
-        background: {
-          color: "#e4eaef",
-          opacity: 0,
-        },   resize: true
-      },
-      modes: {
-        push: { quantity: 4 },
-        attract: { distance: 200, duration: 0.4, factor: 5 }
-      }
-    },
-        
+            background: {
+              color: "#e4eaef",
+              opacity: 0,
+            },
+            resize: true,
+          },
+          modes: {
+            push: { quantity: 4 },
+            attract: { distance: 200, duration: 0.4, factor: 5 },
+          },
+        },
+
         particles: {
           color: { value: "#ffffff" },
           line_linked: {
@@ -46,8 +44,8 @@ const ParticleBackground = () => {
             distance: 150,
             enable: true,
             opacity: 0.4,
-            width: 1
-          },      
+            width: 1,
+          },
           size: {
             value: { min: 5, max: 10 },
           },
@@ -59,13 +57,13 @@ const ParticleBackground = () => {
             out_mode: "out",
             random: false,
             speed: 2,
-            straight: false
+            straight: false,
           },
           number: { density: { enable: true, value_area: 800 }, value: 80 },
           opacity: {
             anim: { enable: false, opacity_min: 0.1, speed: 1, sync: false },
             random: false,
-            value: 0.5
+            value: 0.5,
           },
           shape: {
             character: {
@@ -73,9 +71,8 @@ const ParticleBackground = () => {
               font: "Verdana",
               style: "",
               value: "*",
-              weight: "200"
+              weight: "200",
             },
-            
           },
         },
         polygon: {
@@ -83,10 +80,9 @@ const ParticleBackground = () => {
           move: { radius: 10 },
           scale: 1,
           type: "none",
-          url: ""
+          url: "",
         },
         detectRetina: true,
-        
       }}
     />
   );
