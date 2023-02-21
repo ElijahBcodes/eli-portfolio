@@ -6,14 +6,15 @@ import Doc from '../ElijahBarreto.resume.pdf'
 export default function Resume() {
 
   return (
-  
-    <div className='flex mt-4 justify-center'>
-    <Document  file={Doc} >
+    <>
+    <div className='hero bg-black'>
+      <div className='hero-content  justify-center '>
+    <Document file={Doc} >
       <Page pageNumber={1} />
     </Document>
-
+      </div>
   </div>
-
+</>
   )
 }
 

@@ -36,7 +36,7 @@ function Home() {
       </div>
   <button className="btn btn-secondary mr-2"><a className ="no-underline text-white" href="#projects">Projects </a></button>
   <button className="btn btn-secondary mr-2 "><NavLink className="text-white no-underline" to="/about"> About </NavLink> </button>
-  <button className="btn btn-secondary mr-2">Resume </button>
+  <button className="btn btn-secondary mr-2"><NavLink className="text-white no-underline" to="/resume"> Resume</NavLink></button>
       </div>
   </div>
 </div>
