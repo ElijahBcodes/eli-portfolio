@@ -53,9 +53,6 @@ function Home() {
                 Resume
               </NavLink>
             </button>
-
-            <button className="btn btn-secondary mr-2">Resume </button>
-
           </div>
         </div>
       </div>
