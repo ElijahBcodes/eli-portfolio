@@ -21,14 +21,13 @@ const ParticleBackground = () => {
       options={{
         fpsLimit: 60,
         interactivity: {
-          detect_on: "canvas",
           events: {
           
-            // onhover: {
-            //   enable: true,
-            //   mode: "attract",
-            //   parallax: { enable: false, force: 60, smooth: 10 }
-            // },
+            onhover: {
+              enable: true,
+              mode: "repulse",
+              parallax: { enable: false, force: 60, smooth: 10 }
+            },
         background: {
           color: "#e4eaef",
           opacity: 0,
