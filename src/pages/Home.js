@@ -5,6 +5,9 @@ import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
 import ParticleBackground from "../components/ParticlesBackground";
 import { NavLink } from "react-router-dom";
+
+
+
 function Home() {
   return (
     <>
