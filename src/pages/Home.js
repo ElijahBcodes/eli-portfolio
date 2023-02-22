@@ -49,7 +49,13 @@ function Home() {
                 About{" "}
               </NavLink>{" "}
             </button>
-            <button className="btn btn-secondary mr-2">Resume </button>
+
+            <button className="btn btn-secondary mr-2">
+              <NavLink className="text-white no-underline" to="/resume">
+                {" "}
+                Resume
+              </NavLink>
+            </button>
           </div>
         </div>
       </div>

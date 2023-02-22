@@ -22,6 +22,7 @@ function ProjectItem({ image, name, id }) {
         <h2 className="card-title"> {name} </h2>
         {/* <div style={{ backgroundImage: `url(${image})` }} className="bg-fill rounded-xl" /> */}
       </div>
+
     </div>
   );
 }
