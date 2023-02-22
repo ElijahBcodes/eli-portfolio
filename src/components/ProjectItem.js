@@ -13,7 +13,7 @@ function ProjectItem({ image, name, id }) {
       <div />
       <figure>
         <img
-          className="h-30 w-30 rounded-xl"
+          className="h-30 w-30 "
           src={image}
           alt="project display"
         />
