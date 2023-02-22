@@ -10,12 +10,19 @@ function ProjectItem({ image, name, id }) {
         navigate("/project/" + id);
       }}
     >
-      <div  />
-      <div style={{ backgroundImage: `url(${image})` }} className="bg-fill" />
-      <h1> {name} </h1>
-      <img className="h-20 w-20 rounded-full"
-                  src={image} alt="a project"
-                />
+      <div />
+      <figure>
+        <img
+          className="h-30 w-30 "
+          src={image}
+          alt="project display"
+        />
+      </figure>
+      <div className="card-body items-center text-center">
+        <h2 className="card-title"> {name} </h2>
+        {/* <div style={{ backgroundImage: `url(${image})` }} className="bg-fill rounded-xl" /> */}
+      </div>
+
     </div>
   );
 }
