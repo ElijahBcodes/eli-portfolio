@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function ProjectItem({ image, name, id }) {
+function ProjectItem({ image, name, id, description }) {
   const navigate = useNavigate();
   return (
     <div
@@ -12,17 +12,12 @@ function ProjectItem({ image, name, id }) {
     >
       <div />
       <figure>
-        <img
-          className="h-30 w-30 "
-          src={image}
-          alt="project display"
-        />
+        <img className="h-full w-30 " src={image} alt="project display" />
       </figure>
       <div className="card-body items-center text-center">
-        <h2 className="card-title"> {name} </h2>
-        {/* <div style={{ backgroundImage: `url(${image})` }} className="bg-fill rounded-xl" /> */}
+        <h2 className="card-title"> {name}</h2>
+        <p>{description}</p>
       </div>
-
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import React from "react";
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
+import { Document, Page } from "react-pdf";
 import Doc from "../ElijahBarreto.resume.pdf";
 
-export default function Resume() {
+const Resume = () => {
   return (
     <>
       <div className="hero bg-black">
@@ -14,4 +14,6 @@ export default function Resume() {
       </div>
     </>
   );
-}
+};
+
+export default Resume;
