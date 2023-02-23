@@ -7,7 +7,6 @@ import ParticleBackground from "../components/ParticlesBackground";
 import { NavLink } from "react-router-dom";
 
 
-
 function Home() {
   return (
     <>
@@ -60,14 +59,18 @@ function Home() {
         </div>
       </div>
       <div className="h-full text-center " id="projects">
-        <h1> Recent Projects </h1>
-        <div className="text-base justify-center flex flex-wrap space-x-4">
+        <h1 className="sm:text-6xl font-bold"> Recent Projects </h1>
+        <div className="text-base justify-center flex flex-wrap space-x-4 cursor-pointer">
           {ProjectList.map((project, idx) => {
             return (
-              <ProjectItem id={idx} name={project.name} image={project.image} />
+            <>
+              <ProjectItem id={idx} name={project.name} image={project.image} description={project.description} />
+              </>
             );
           })}
+          
         </div>
+            
       </div>
     </>
   );
