@@ -2,8 +2,7 @@ import React from "react";
 import { Document, Page } from "react-pdf";
 import Doc from "../ElijahBarreto.resume.pdf";
 
-const Resume = ()=> {
-
+const Resume = () => {
   return (
     <>
       <div className="hero bg-black">
@@ -15,7 +14,6 @@ const Resume = ()=> {
       </div>
     </>
   );
-}
+};
 
-
-export default  Resume;
+export default Resume;

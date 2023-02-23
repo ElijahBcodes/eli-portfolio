@@ -12,15 +12,11 @@ function ProjectItem({ image, name, id, description }) {
     >
       <div />
       <figure>
-        <img
-          className="h-full w-30 "
-          src={ image }
-          alt="project display"
-        />
+        <img className="h-full w-30 " src={image} alt="project display" />
       </figure>
       <div className="card-body items-center text-center">
-        <h2 className="card-title"> { name }</h2>
-        <p>{ description }</p>
+        <h2 className="card-title"> {name}</h2>
+        <p>{description}</p>
       </div>
     </div>
   );

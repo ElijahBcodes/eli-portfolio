@@ -6,7 +6,6 @@ import { ProjectList } from "../helpers/ProjectList";
 import ParticleBackground from "../components/ParticlesBackground";
 import { NavLink } from "react-router-dom";
 
-
 function Home() {
   return (
     <>
@@ -63,14 +62,17 @@ function Home() {
         <div className="text-base justify-center flex flex-wrap space-x-4 cursor-pointer">
           {ProjectList.map((project, idx) => {
             return (
-            <>
-              <ProjectItem id={idx} name={project.name} image={project.image} description={project.description} />
+              <>
+                <ProjectItem
+                  id={idx}
+                  name={project.name}
+                  image={project.image}
+                  description={project.description}
+                />
               </>
             );
           })}
-          
         </div>
-            
       </div>
     </>
   );
