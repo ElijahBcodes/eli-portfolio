@@ -9,11 +9,10 @@ const About = () => {
         <figure className="h-50">
           <img src={pic1} alt="profile pic" />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">About Me</h2>
+        <div className="card-body text-center">
+          <h2 className="card-title justify-center">About Me</h2>
           <p>
-            My name is Elijah, a full stack web developer specializing in React
-            and Ruby on Rails. Thank you for visiting my portfolio!{" "}
+            A little bit about me, I drink a lot of coffee mostly pour over. For fun I like to run trails and ultras. Thank you for visiting my portfolio!{" "}
           </p>
         </div>     
       </div>
