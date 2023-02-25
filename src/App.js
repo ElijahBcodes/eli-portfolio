@@ -8,8 +8,14 @@ import Resume from "./pages/Resume";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import { useEffect } from 'react'
+import { themeChange } from 'theme-change'
 
 const App = () => {
+  useEffect(() => {
+    themeChange(false)
+    // 👆 false parameter is required for react project
+  }, [])
   return (
     <div>
       <Router>
