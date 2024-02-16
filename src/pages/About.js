@@ -12,9 +12,10 @@ const About = () => {
           <div className="card-body text-center">
             <h2 className="card-title justify-center">About Me</h2>
             <p>
-              A little bit about me, I just need a cup of coffee to start my
-              day. For fun I like to run trails and ultras. Thank you for
-              visiting my portfolio!{" "}
+              Hey there! I'm Eli, a passionate full stack developer specializing
+              in React and Ruby on Rails. Take a look around and see some my
+              recent projects. If you have a project you would like to
+              collaborate with please feel free reach out to me.
             </p>
           </div>
         </div>
