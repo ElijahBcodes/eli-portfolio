@@ -28,7 +28,7 @@ function Home() {
                     {
                       type: "word",
                       text: "!",
-                      cursor: { char: "😀", cursorClass: "css-class" },
+                      
                     },
                   ],
                   // Banner 2
