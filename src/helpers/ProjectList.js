@@ -2,8 +2,17 @@ import Proj1 from "../assets/proj1.jpg";
 import Proj2 from "../assets/proj2.jpg";
 import Proj6 from "../assets/portfolio.png";
 import Proj7 from "../assets/stycker.png";
+import Proj8 from "../assets/hallmachinesd.png"
 
 export const ProjectList = [
+  {
+    name: "Hall Machine",
+    image: Proj8,
+    skills: "Worpress, Heroku, SEO, Google Analytics",
+    description:
+      "Built company website using Wordpress. Improve SEO performance and optimization.",
+    link: "https://hallmachinesd.com/",
+  },
   {
     name: "Stycker",
     image: Proj7,
