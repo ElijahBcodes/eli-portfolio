@@ -2,8 +2,18 @@ import Proj1 from "../assets/proj1.jpg";
 import Proj2 from "../assets/proj2.jpg";
 import Proj6 from "../assets/portfolio.png";
 import Proj7 from "../assets/stycker.png";
+import Proj8 from "../assets/hallmachinesd.png"
 
 export const ProjectList = [
+  {
+    name: "Hall Machine",
+    image: Proj8,
+    skills: "React, Next.JS, MongoDB, Supabase Auth, tailwindCSS, daisyUI",
+    description:
+      "Developed using React, Next.JS, mongoDB, Supabase Auth, tailwindCSS, & daisyUI. A place where developers can come together like moths to a flame, to share their love of code. Find a project and make a contribution or share one of your own projects and let others contribute.",
+    gitHub: "https://github.com/chingu-voyages/v42-bears-team-41",
+    link: "https://hallmachinesd.com/",
+  },
   {
     name: "Stycker",
     image: Proj7,
