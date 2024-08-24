@@ -8,10 +8,9 @@ export const ProjectList = [
   {
     name: "Hall Machine",
     image: Proj8,
-    skills: "React, Next.JS, MongoDB, Supabase Auth, tailwindCSS, daisyUI",
+    skills: "Worpress, Heroku, SEO, Google Analytics",
     description:
-      "Developed using React, Next.JS, mongoDB, Supabase Auth, tailwindCSS, & daisyUI. A place where developers can come together like moths to a flame, to share their love of code. Find a project and make a contribution or share one of your own projects and let others contribute.",
-    gitHub: "https://github.com/chingu-voyages/v42-bears-team-41",
+      "Built company website using Wordpress. Improve SEO performance and optimization.",
     link: "https://hallmachinesd.com/",
   },
   {
